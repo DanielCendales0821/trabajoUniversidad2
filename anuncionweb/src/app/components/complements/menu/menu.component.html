@@ -1,0 +1,35 @@
+<div id="sidebar" class="tm-sidebar-left uk-background-default">
+    <div class="user">
+        <img id="avatar" width="200" height="200" class="uk-border-circle" src="../../../../assets/images/logo.png" />
+        <div class="uk-margin-top"></div>
+        <h3>
+            <strong>
+                {{user.data.nombre}}
+            </strong>
+        </h3>
+        <div id="email" class="uk-text-truncate">
+            <h6>{{user.data.correo}}</h6>
+        </div>
+        <div id="email" class="uk-text-truncate">
+            <h6>{{user.data.rol.descripcion}}</h6>
+        </div>
+    </div>
+
+    <ul class="uk-nav uk-nav-default">
+        <hr class="uk-divider-icon">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN']" >
+            <a routerLink="/usuario" routerLinkActive="active">
+                <i class="fas fa-users"></i>
+                <strong>  Usuarios</strong>
+            </a>
+        </li>
+        <hr class="uk-divider-icon">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO']">
+            <a routerLink="/anuncios"><i class="fas fa-cogs"></i><b>  Anuncios</b></a>
+        </li>
+        <hr class="uk-divider-icon">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO']">
+            <a routerLink="/perfil"><i class="fas fa-cogs"></i><b> Perfil</b></a>
+        </li>
+    </ul>
+</div>
