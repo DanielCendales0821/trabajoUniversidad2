@@ -76,13 +76,13 @@
 
 <sh-context-menu #menu>
   <ng-template shContextMenuItem>
-    <div routerLink="/usuario/editar/{{idUser}}" *ngxPermissionsOnly="['ADMIN']">
+    <div routerLink="/usuario/editar/{{idUser}}" *ngxPermissionsOnly="['ADMIN','CONTADOR']">
       <span uk-icon="icon: pencil"></span>
       Editar Usuario
     </div>
   </ng-template>
   <ng-template shContextMenuItem >
-    <div routerLink="/usuario/eliminar/{{idUser}}" *ngxPermissionsOnly="['ADMIN']">
+    <div routerLink="/usuario/eliminar/{{idUser}}" *ngxPermissionsOnly="['ADMIN', 'CONTADOR']">
       <span uk-icon="icon: trash"></span>
       Eliminar Usuario
     </div>

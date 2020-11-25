@@ -17,18 +17,18 @@
 
     <ul class="uk-nav uk-nav-default">
         <hr class="uk-divider-icon">
-        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN']">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'CONTADOR']">
             <a routerLink="/usuario" routerLinkActive="active">
                 <i class="fas fa-users"></i>
                 <strong> Usuarios</strong>
             </a>
         </li>
         <hr class="uk-divider-icon">
-        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO']">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO', 'CONTADOR']">
             <a routerLink="/perfil"><i class="fas fa-cogs"></i><b> Perfil</b></a>
         </li>
         <hr class="uk-divider-icon">
-        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO']">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO', 'CONTADOR']">
             <a routerLink="/anuncios"><i class="fas fa-cogs"></i><b> Anuncios</b></a>
         </li>
 
