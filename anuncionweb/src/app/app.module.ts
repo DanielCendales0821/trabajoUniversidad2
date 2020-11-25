@@ -31,6 +31,18 @@ import { AgregarAnunciosComponent } from './components/anuncios/agregar-anuncios
 import { EditarAnunciosComponent } from './components/anuncios/editar-anuncios/editar-anuncios.component';
 import { EliminarAnunciosComponent } from './components/anuncios/eliminar-anuncios/eliminar-anuncios.component';
 import { PerfilComponent } from './components/usuario/perfil/perfil.component';
+import { RolComponent } from './components/rol/rol/rol.component';
+import { AgregarRolComponent } from './components/rol/agregar-rol/agregar-rol.component';
+import { EditarRolComponent } from './components/rol/editar-rol/editar-rol.component';
+import { EliminarRolComponent } from './components/rol/eliminar-rol/eliminar-rol.component';
+import { ActividadesComponent } from './components/actividades/actividades/actividades.component';
+import { AgregarActividadesComponent } from './components/actividades/agregar-actividades/agregar-actividades.component';
+import { EditarActividadesComponent } from './components/actividades/editar-actividades/editar-actividades.component';
+import { EliminarActividadesComponent } from './components/actividades/eliminar-actividades/eliminar-actividades.component';
+import { AccionesComponent } from './components/tareas/acciones/acciones.component';
+import { AgregarAccionesComponent } from './components/tareas/agregar-acciones/agregar-acciones.component';
+import { EditarAccionesComponent } from './components/tareas/editar-acciones/editar-acciones.component';
+import { EliminarAccionesComponent } from './components/tareas/eliminar-acciones/eliminar-acciones.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +61,19 @@ import { PerfilComponent } from './components/usuario/perfil/perfil.component';
     AgregarAnunciosComponent,
     EditarAnunciosComponent,
     EliminarAnunciosComponent,
-    PerfilComponent
+    PerfilComponent,
+    RolComponent,
+    AgregarRolComponent,
+    EditarRolComponent,
+    EliminarRolComponent,
+    ActividadesComponent,
+    AgregarActividadesComponent,
+    EditarActividadesComponent,
+    EliminarActividadesComponent,
+    AccionesComponent,
+    AgregarAccionesComponent,
+    EditarAccionesComponent,
+    EliminarAccionesComponent
   ],
   imports: [
     BrowserModule,

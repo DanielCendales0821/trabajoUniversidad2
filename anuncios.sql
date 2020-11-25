@@ -27,3 +27,18 @@ CREATE TABLE anuncio (
     PRIMARY KEY (id),
     FOREIGN KEY (idUsuario) REFERENCES usuario(id)
 );
+
+CREATE TABLE actividades (
+    id INT NOT NULL AUTO_INCREMENT,
+    descripcion VARCHAR (200) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE actividades_rol (
+    id INT NOT NULL AUTO_INCREMENT,
+    idrol INT,
+    idactividad INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (idrol) REFERENCES rol(id),
+    FOREIGN KEY (idactividad) REFERENCES actividades(id)
+);

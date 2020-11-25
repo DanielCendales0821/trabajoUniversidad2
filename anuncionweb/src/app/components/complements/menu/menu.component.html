@@ -17,19 +17,41 @@
 
     <ul class="uk-nav uk-nav-default">
         <hr class="uk-divider-icon">
-        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN']" >
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN']">
             <a routerLink="/usuario" routerLinkActive="active">
                 <i class="fas fa-users"></i>
-                <strong>  Usuarios</strong>
+                <strong> Usuarios</strong>
             </a>
         </li>
         <hr class="uk-divider-icon">
         <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO']">
-            <a routerLink="/anuncios"><i class="fas fa-cogs"></i><b>  Anuncios</b></a>
+            <a routerLink="/perfil"><i class="fas fa-cogs"></i><b> Perfil</b></a>
         </li>
         <hr class="uk-divider-icon">
         <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN', 'USUARIO']">
-            <a routerLink="/perfil"><i class="fas fa-cogs"></i><b> Perfil</b></a>
+            <a routerLink="/anuncios"><i class="fas fa-cogs"></i><b> Anuncios</b></a>
+        </li>
+
+        <hr class="uk-divider-icon">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN']">
+            <a routerLink="/rol" routerLinkActive="active">
+                <i class="fas fa-users"></i>
+                <strong> Rol</strong>
+            </a>
+        </li>
+        <hr class="uk-divider-icon">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN']">
+            <a routerLink="/actividades" routerLinkActive="active">
+                <i class="fas fa-users"></i>
+                <strong> Actividades</strong>
+            </a>
+        </li>
+        <hr class="uk-divider-icon">
+        <li style="text-align: center;" *ngxPermissionsOnly="['ADMIN']">
+            <a routerLink="/tareas" routerLinkActive="active">
+                <i class="fas fa-users"></i>
+                <strong> Gestionar Actividades-Roles</strong>
+            </a>
         </li>
     </ul>
 </div>
